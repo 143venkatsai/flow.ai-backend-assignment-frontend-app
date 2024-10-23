@@ -1,0 +1,96 @@
+.app-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #323f4b;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.heading{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.input-section select,input{
+    width: 45%;
+    margin: auto;
+    margin-left: 0px;
+}
+
+input, select{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.category{
+    margin-left: auto;
+}
+
+.btn{
+    background-color: #347bed;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 15px 0px;
+    cursor: pointer;
+    outline: none;
+}
+
+.transactions-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+li{
+    list-style-type: none;
+    border: 1px solid #323f4b;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:767px){
+    .app-container{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .form-container{
+        width: 90%;
+    }
+
+    .input-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-section select, input{
+        width: 90%;
+    }
+
+    .category{
+        margin-left: 0px;
+    }
+    .heading{
+        margin-bottom: 10px;
+    }
+}
